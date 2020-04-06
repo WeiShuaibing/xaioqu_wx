@@ -1,0 +1,96 @@
+{
+	"pages": [
+		{
+			"path": "pages/base/login/login",
+			"style": {
+				"navigationBarTitleText": "小区管理"
+			}
+		}
+        ,{
+            "path" : "pages/base/me/me",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/home/home",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/base/editPassword/editPassword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/base/regist/regist",
+            "style" : {}
+        }
+        
+        ,{
+            "path" : "pages/repair/repair",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/repair/repair_speed",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/suggestion/suggestion",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/suggestion/suggestion_speed",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/base/editUserInfo/editUserInfo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/forum/forum",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/forum/forum_detail",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/forum/addComment",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/pay/pay",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/pay/payrecord",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		// "navigationBarBackgroundColor": "#0081ff",
+		"navigationBarBackgroundColor": "#F0F0F0",
+		"navigationBarTitleText": "小区管理",
+		// "navigationStyle": "custom", // 自定义导航栏
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+	    "list": [
+	      {
+	        "pagePath": "pages/home/home", //跳转路径
+	        "text": "首页",                  //tab显示文本
+	        "iconPath": "static/img/home.png",  //tab图标
+	        "selectedIconPath": "static/img/home_active.png" //选中时tab的图标
+	      },
+	      // {
+	      //   "pagePath": "pages/scenic/scenic_list/scenic_list",
+	      //   "text": "景点",
+	      //   "iconPath": "static/img/scenic.png",
+	      //   "selectedIconPath": "static/img/scenic_active.png"
+	      // },
+	      {
+	        "pagePath": "pages/base/me/me",
+	        "text": "我的",
+	        "iconPath": "static/img/me.png",
+	        "selectedIconPath": "static/img/me_active.png"
+	      }
+	    ]
+	  }
+}

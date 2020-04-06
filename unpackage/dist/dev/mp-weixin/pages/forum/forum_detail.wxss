@@ -1,0 +1,24 @@
+
+.my_card{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+
+	padding: 30rpx;
+	border-radius: 12rpx;
+	width: 45%;
+	height: 180rpx;
+	margin: 0 2.5% 40rpx;
+	background-image: url(https://cdn.nlark.com/yuque/0/2019/png/280374/1552996358352-assets/web-upload/cc3b1807-c684-4b83-8f80-80e5b8a6b975.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	z-index: 1;
+}
+.card_text{
+	font-size: 32rpx;
+}
+.card_text:first-letter{
+	font-size: 36rpx;
+}
+

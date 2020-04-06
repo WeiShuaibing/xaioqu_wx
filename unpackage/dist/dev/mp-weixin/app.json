@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/base/login/login",
+    "pages/base/me/me",
+    "pages/home/home",
+    "pages/base/editPassword/editPassword",
+    "pages/base/regist/regist",
+    "pages/repair/repair",
+    "pages/repair/repair_speed",
+    "pages/suggestion/suggestion",
+    "pages/suggestion/suggestion_speed",
+    "pages/base/editUserInfo/editUserInfo",
+    "pages/forum/forum",
+    "pages/forum/forum_detail",
+    "pages/forum/addComment",
+    "pages/pay/pay",
+    "pages/pay/payrecord"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarBackgroundColor": "#F0F0F0",
+    "navigationBarTitleText": "小区管理",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "static/img/home.png",
+        "selectedIconPath": "static/img/home_active.png"
+      },
+      {
+        "pagePath": "pages/base/me/me",
+        "text": "我的",
+        "iconPath": "static/img/me.png",
+        "selectedIconPath": "static/img/me_active.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
+  "sitemapLocation": "sitemap17.json"
+}
