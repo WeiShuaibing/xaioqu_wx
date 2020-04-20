@@ -281,7 +281,7 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../util/util.js */
         url: _util.default + 'repair/getAllOfMy',
         method: 'GET',
         header: {
-          YQYJToken: uni.getStorageSync('local_userinfo').token },
+          XiaoQuToken: uni.getStorageSync('local_userinfo').token },
 
         success: function success(res) {
           _this.myRepairList = res.data.data;

@@ -49,7 +49,7 @@
 					url:BASE_HOST + 'payrecord/getMyRecord',
 					method:'GET',
 					header:{
-						YQYJToken: uni.getStorageSync('local_userinfo').token
+						XiaoQuToken: uni.getStorageSync('local_userinfo').token
 					},
 					success(res) {
 						_this.payList = res.data.data

@@ -261,7 +261,7 @@ var _default = { data: function data() {return { ageIndex: -1, ageList: [18, 19,
                   url: _util.default + 'user/infoForStore',
                   method: 'GET',
                   header: {
-                    YQYJToken: uni.getStorageSync('local_userinfo').token },
+                    XiaoQuToken: uni.getStorageSync('local_userinfo').token },
 
                   success: function success(res) {
                     uni.switchTab({

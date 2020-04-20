@@ -101,7 +101,7 @@ import BASE_HOST from '../../util/util.js'
 											repairImgs: _this.upImgList.join(',')
 										},
 										header: {
-											YQYJToken: uni.getStorageSync('local_userinfo').token,
+											XiaoQuToken: uni.getStorageSync('local_userinfo').token,
 										},
 										success: (res) => {
 											if (res.data.code === 20002) {

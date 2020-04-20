@@ -56,7 +56,7 @@
 					url: BASE_HOST + 'payrecord/setNewRecord',
 					method:'GET',
 					header:{
-						YQYJToken: uni.getStorageSync('local_userinfo').token
+						XiaoQuToken: uni.getStorageSync('local_userinfo').token
 					},
 					data:{
 						id: item.id
@@ -76,7 +76,7 @@
 					url: BASE_HOST + 'payorder/getAllOfINotPay',
 					method: 'GET',
 					header:{
-						YQYJToken: uni.getStorageSync('local_userinfo').token
+						XiaoQuToken: uni.getStorageSync('local_userinfo').token
 					},
 					success(res) {
 						console.log(res.data.data)

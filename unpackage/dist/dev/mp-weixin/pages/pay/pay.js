@@ -215,7 +215,7 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../util/util.js */
 //
 //
 //
-var _default = { data: function data() {return { shoudPayList: [], isShowNoPay: false };}, filters: { dateFormat: function dateFormat(value) {var d = new Date(value);return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();} }, mounted: function mounted() {this.getAllOfINotPay();}, methods: { toPay: function toPay(item) {var _this = this;uni.request({ url: _util.default + 'payrecord/setNewRecord', method: 'GET', header: { YQYJToken: uni.getStorageSync('local_userinfo').token }, data: { id: item.id }, success: function success(res) {uni.showToast({ title: '缴费成功', duration: 2000 });
+var _default = { data: function data() {return { shoudPayList: [], isShowNoPay: false };}, filters: { dateFormat: function dateFormat(value) {var d = new Date(value);return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();} }, mounted: function mounted() {this.getAllOfINotPay();}, methods: { toPay: function toPay(item) {var _this = this;uni.request({ url: _util.default + 'payrecord/setNewRecord', method: 'GET', header: { XiaoQuToken: uni.getStorageSync('local_userinfo').token }, data: { id: item.id }, success: function success(res) {uni.showToast({ title: '缴费成功', duration: 2000 });
           _this.getAllOfINotPay();
         } });
 
@@ -226,7 +226,7 @@ var _default = { data: function data() {return { shoudPayList: [], isShowNoPay: 
         url: _util.default + 'payorder/getAllOfINotPay',
         method: 'GET',
         header: {
-          YQYJToken: uni.getStorageSync('local_userinfo').token },
+          XiaoQuToken: uni.getStorageSync('local_userinfo').token },
 
         success: function success(res) {
           console.log(res.data.data);

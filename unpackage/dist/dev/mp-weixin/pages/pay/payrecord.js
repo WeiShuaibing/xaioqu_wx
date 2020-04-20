@@ -203,7 +203,7 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../util/util.js */
 //
 //
 //
-var _default = { data: function data() {return { payList: [] };}, filters: { dateFormat: function dateFormat(value) {var d = new Date(value);return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();} }, mounted: function mounted() {this.getAllPayRecord();}, methods: { getAllPayRecord: function getAllPayRecord() {var _this = this;uni.request({ url: _util.default + 'payrecord/getMyRecord', method: 'GET', header: { YQYJToken: uni.getStorageSync('local_userinfo').token }, success: function success(res) {_this.payList = res.data.data;console.log(_this.payList);
+var _default = { data: function data() {return { payList: [] };}, filters: { dateFormat: function dateFormat(value) {var d = new Date(value);return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();} }, mounted: function mounted() {this.getAllPayRecord();}, methods: { getAllPayRecord: function getAllPayRecord() {var _this = this;uni.request({ url: _util.default + 'payrecord/getMyRecord', method: 'GET', header: { XiaoQuToken: uni.getStorageSync('local_userinfo').token }, success: function success(res) {_this.payList = res.data.data;console.log(_this.payList);
         } });
 
     } } };exports.default = _default;

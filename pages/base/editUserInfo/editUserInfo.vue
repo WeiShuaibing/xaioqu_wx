@@ -126,7 +126,7 @@
 										url: BASE_HOST + 'user/infoForStore',
 										method:'GET',
 										header: {
-											YQYJToken: uni.getStorageSync('local_userinfo').token,
+											XiaoQuToken: uni.getStorageSync('local_userinfo').token,
 										},
 										success(res) {
 											uni.switchTab({

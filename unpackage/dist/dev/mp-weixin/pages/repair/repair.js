@@ -234,7 +234,7 @@ var _util = _interopRequireDefault(__webpack_require__(/*! ../../util/util.js */
                               repairImgs: _this.upImgList.join(',') },
 
                             header: {
-                              YQYJToken: uni.getStorageSync('local_userinfo').token },
+                              XiaoQuToken: uni.getStorageSync('local_userinfo').token },
 
                             success: function success(res) {
                               if (res.data.code === 20002) {
