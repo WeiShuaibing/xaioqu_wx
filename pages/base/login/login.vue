@@ -35,7 +35,7 @@
 		data() {
 			return {
 				user_phone: '12345678001',
-				user_password: '123456'
+				user_password: ''
 			}
 		},
 		onLoad() {
